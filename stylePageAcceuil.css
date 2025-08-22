@@ -1,0 +1,185 @@
+.header {
+    background: linear-gradient(to right, #3ecdc8, #04048a);
+    margin: 0;
+    padding: 16px 10px 28px;
+    width: 100%;
+}
+
+.containerNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.navRight {
+    display: flex;
+    gap: 30px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.titre {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    margin-top: 12px;
+
+}
+
+/* -----------------------Colonne sur les avantages de Trello---------------------*/
+.avantageTrello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.centrageAvantageTrello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    margin: 20px;
+}
+
+.avantage {
+    text-align: center;
+    margin: 20px;
+
+}
+
+/* --------------------------IMAGE------------ */
+.parametreImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+img {
+    height: 60vh;
+}
+
+/* --------------------footer---------------- */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #3ecdc8, #04048a);
+    height: 10vh;
+}
+
+
+
+/* -------------------- Responsive Mobile ---------------- */
+@media (max-width: 767px) {
+    .containerNav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navRight {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .titre {
+        font-size: 28px;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+
+    .centrageAvantageTrello {
+        flex-direction: column;
+        height: auto;
+        gap: 16px;
+    }
+
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .footer {
+        flex-direction: column;
+        padding: 16px;
+        height: auto;
+        text-align: center;
+    }
+}
+
+
+
+
+/* -------------------- Responsive Tablette ---------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+    .containerNav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navRight {
+        flex-direction: row;
+        gap: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .titre {
+        font-size: 32px;
+    }
+
+
+    .centrageAvantageTrello {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+        margin: 20px auto;
+        height: auto;
+    }
+
+    .avantage {
+        text-align: center;
+        padding: 12px;
+    }
+
+    img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: center;
+        padding: 20px;
+        height: auto;
+    }
+}

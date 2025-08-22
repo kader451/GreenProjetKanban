@@ -1,0 +1,191 @@
+.header {
+    background: linear-gradient(to right, #3ecdc8, #04048a);
+    margin: 0;
+    padding: 16px 10px 28px;
+}
+
+.containerNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.navRight {
+    display: flex;
+    gap: 30px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.titre {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    margin-top: 12px;
+
+}
+
+/* -----------------------Colonne sur les avantages de Trello---------------------*/
+.avantageTrello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.centrageAvantageTrello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    margin: 20px;
+}
+
+.avantage {
+    text-align: center;
+    margin: 20px;
+
+}
+
+/* --------------------------IMAGE------------ */
+.parametreImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+img {
+    height: 60vh;
+}
+
+/* --------------------footer---------------- */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #3ecdc8, #04048a);
+    height: 10vh;
+}
+
+
+/* ---------------JS----------- */
+
+.list-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.monBoutonAddList {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(181, 211, 235);
+    border-color: aqua;
+    height: 3vh;
+    width: 13%;
+    border-radius: 7px;
+}
+
+.btn-supprimer-liste {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #b00020;
+    font-weight: bold;
+}
+
+.btn-supprimer-liste:hover {
+    color: #7a0015;
+    transform: scale(1.2);
+}
+
+.headerBlue {
+    position: relative;
+    background-color: rgb(154, 196, 206);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    border-color: aqua;
+}
+
+
+#boiteDesListes {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    overflow-x: auto;
+    border: 1px solid black;
+}
+
+
+#boiteDesListes>section {
+    min-width: 250px;
+}
+
+
+.btn-add-task {
+    margin: 10px;
+    width: 80%;
+    background-color: rgb(154, 196, 206);
+    border: 1px solid aqua;
+    border-radius: 5px;
+}
+
+.list .tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.list {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    padding: 8px;
+    margin: 10px;
+}
+
+.task {
+    border: 2px solid #000;
+    border-radius: 12px;
+    background: #fff;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contenuCarte {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+    padding: 10px;
+}
