@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const headerList = document.createElement('div');
         headerList.className = 'list-header';
 
-        // bouton suppression liste
+        // bouton suppression liste avec le x
         const boutonSupprimerListe = document.createElement('button');
         boutonSupprimerListe.type = 'button';
         boutonSupprimerListe.textContent = '×';
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const tasksContainer = document.createElement('div');
         tasksContainer.className = 'tasks';
 
-        // --- DRAGOVER & DROP ---
+        // --- dragover and drop ---
         tasksContainer.ondragover = (ev) => {
             ev.preventDefault();
             ev.dataTransfer.dropEffect = "move";
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.id = "task-" + Date.now();
         card.draggable = true;
 
-        // --- DRAGSTART ---
+        // --- dragstart ---
         card.ondragstart = (ev) => {
             ev.dataTransfer.setData("text/plain", ev.target.id);
             ev.dataTransfer.dropEffect = "move";
@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', () => {
         input.setAttribute('aria-label', 'Titre de la tâche'); 
         contenuCarte.appendChild(input);
 
-        // bouton suppression tâche
+        // bouton suppression tâche avec le x
         const boutonX = document.createElement('button');
         boutonX.type = 'button';
         boutonX.textContent = '×';
